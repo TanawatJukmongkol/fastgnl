@@ -6,7 +6,7 @@
 /*   By: tjukmong <tjukmong@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/23 15:42:45 by tjukmong          #+#    #+#             */
-/*   Updated: 2023/04/17 14:41:19 by tjukmong         ###   ########.fr       */
+/*   Updated: 2023/04/17 21:55:06 by tjukmong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,8 @@ void	get_nlbyte(t_vars *v)
 
 	if (!v->t)
 		read_next(v);
+	if (v->t_last->nbyte == (size_t)-1)
+		return ;
 	tok = v->t;
 	while (tok->nbyte)
 	{
@@ -102,7 +104,7 @@ char	*get_next_line(int fd)
 	}
 	v[fd].nl_bytes = 0;
 	get_nlbyte(&v[fd]);
-	if (v[fd].nl_bytes == 0)
+	if (v[fd].nl_bytes == 0 || v[fd].t->nbyte == (size_t)-1)
 	{
 		free(v[fd].t);
 		v[fd].fin = 1;

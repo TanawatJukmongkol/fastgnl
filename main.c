@@ -3,17 +3,18 @@
 #include <stdio.h>
 
 int main () {
-	int file = open("test", O_RDONLY);
+	// int file = open("test", O_RDONLY);
 
-	char *gnl = get_next_line(file);
-	char *gnl2 = get_next_line(file);
-	char *gnl3 = get_next_line(file);
-	close(file);
+	// char *gnl = get_next_line(file);
+	// char *gnl2 = get_next_line(file);
+	// char *gnl3 = get_next_line(file);
+	// close(file);
+	char *gnl = get_next_line(999);
 
 	printf("%s", gnl);
 	free(gnl);
-	printf("%s", gnl2);
-	free(gnl2);
-	printf("%s", gnl3);
-	free(gnl3);
+	// printf("%s", gnl2);
+	// free(gnl2);
+	// printf("%s", gnl3);
+	// free(gnl3);
 }

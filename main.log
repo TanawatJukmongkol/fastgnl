@@ -1,0 +1,114 @@
+[1;36m========-[ Execution output ]-========[0;37m
+(null)
+[1;35m============-[ Valgrind ]-============[0;37m
+==43082== Memcheck, a memory error detector
+==43082== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==43082== Using Valgrind-3.20.0 and LibVEX; rerun with -h for copyright info
+==43082== Command: ./main.out --leak-check=full --show-reachable=yes
+==43082== 
+(null)==43082== 
+==43082== HEAP SUMMARY:
+==43082==     in use at exit: 0 bytes in 0 blocks
+==43082==   total heap usage: 2 allocs, 2 frees, 4,160 bytes allocated
+==43082== 
+==43082== All heap blocks were freed -- no leaks are possible
+==43082== 
+==43082== For lists of detected and suppressed errors, rerun with: -s
+==43082== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[1;32m===========-[ Norm errors ]-==========[0;37m
+./get_next_line.c: Error!
+Error: WRONG_SCOPE_COMMENT  (line:  35, col:   5):	Comment is invalid in this scope
+./get_next_line.h: Error!
+Error: PREPROC_BAD_INDENT   (line:  24, col:   1):	Bad preprocessor indentation
+Error: CONSECUTIVE_NEWLINES (line:  26, col:   1):	Consecutive newlines
+./main.c: Error!
+Error: INVALID_HEADER       (line:   1, col:   1):	Missing or invalid 42 header
+Error: SPACE_BEFORE_FUNC    (line:   5, col:   4):	space before function name
+Error: EXP_PARENTHESIS      (line:   5, col:   9):	Expected parenthesis
+Error: NO_ARGS_VOID         (line:   5, col:  11):	Empty function argument requires void
+Error: BRACE_NEWLINE        (line:   5, col:  13):	Expected newline before brace
+Error: WRONG_SCOPE_COMMENT  (line:   6, col:   5):	Comment is invalid in this scope
+Error: EMPTY_LINE_FUNCTION  (line:   7, col:   1):	Empty line in function
+Error: WRONG_SCOPE_COMMENT  (line:   8, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:   9, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  10, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  11, col:   5):	Comment is invalid in this scope
+Error: VAR_DECL_START_FUNC  (line:  12, col:   1):	Variable declaration not at start of function
+Error: SPACE_REPLACE_TAB    (line:  12, col:   9):	Found space when expecting tab
+Error: DECL_ASSIGN_LINE     (line:  12, col:  15):	Declaration and assignation on a single line
+Error: WRONG_SCOPE_COMMENT  (line:  16, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  17, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  18, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  19, col:   5):	Comment is invalid in this scope
+./othello/frame.c: Error!
+Error: INVALID_HEADER       (line:   1, col:   1):	Missing or invalid 42 header
+Error: LINE_TOO_LONG        (line:  21, col:  88):	line too long
+Error: LINE_TOO_LONG        (line:  22, col:  87):	line too long
+Error: LINE_TOO_LONG        (line:  44, col:  85):	line too long
+Error: TOO_MANY_LINES       (line:  45, col:   1):	Function has more than 25 lines
+./othello/gnl_test_bonus.c: Error!
+Error: EMPTY_LINE_FILE_START (line:   1, col:   1):	Empty line at start of file
+Error: INVALID_HEADER       (line:   1, col:   1):	Missing or invalid 42 header
+Error: LINE_TOO_LONG        (line:  51, col:  89):	line too long
+Error: LINE_TOO_LONG        (line:  52, col:  83):	line too long
+Error: LINE_TOO_LONG        (line:  52, col: 132):	line too long
+Error: LINE_TOO_LONG        (line:  52, col: 132):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  52, col: 132):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  52, col: 132):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  53, col:  83):	line too long
+Error: LINE_TOO_LONG        (line:  53, col: 140):	line too long
+Error: LINE_TOO_LONG        (line:  53, col: 140):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  53, col: 140):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  53, col: 140):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  70, col:   1):	line too long
+Error: SPACE_REPLACE_TAB    (line:  81, col:   9):	Found space when expecting tab
+Error: MULT_DECL_LINE       (line:  81, col:  11):	Multiple declarations on a single line
+Error: SPACE_REPLACE_TAB    (line:  82, col:  11):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  82, col:  12):	Misaligned variable declaration
+Error: ASSIGN_IN_CONTROL    (line:  84, col:  12):	Assignment in control structure
+Error: TOO_MANY_TAB         (line:  93, col:   1):	Extra tabs for indent level
+Error: TOO_MANY_TAB         (line:  94, col:   1):	Extra tabs for indent level
+Error: EXP_NEWLINE          (line:  94, col:  28):	Expected newline after control structure
+Error: TOO_MANY_TAB         (line:  95, col:   1):	Extra tabs for indent level
+Error: TOO_MANY_TAB         (line:  96, col:   1):	Extra tabs for indent level
+Error: TOO_MANY_TAB         (line:  97, col:   1):	Extra tabs for indent level
+Error: TOO_MANY_TAB         (line:  98, col:   1):	Extra tabs for indent level
+Error: WRONG_SCOPE          (line:  98, col:   1):	Statement is in incorrect scope
+Error: EXP_NEWLINE          (line:  98, col:  43):	Expected newline after control structure
+Error: TOO_MANY_TAB         (line: 100, col:   1):	Extra tabs for indent level
+Error: TOO_MANY_TAB         (line: 101, col:   1):	Extra tabs for indent level
+Error: NEWLINE_PRECEDES_FUNC (line: 102, col:   1):	Functions must be separated by a newline
+Error: TOO_MANY_LINES       (line: 146, col:   1):	Function has more than 25 lines
+Error: TOO_MANY_FUNCS       (line: 159, col:   1):	Too many functions in file
+Error: DECL_ASSIGN_LINE     (line: 162, col:  22):	Declaration and assignation on a single line
+Error: TOO_MANY_FUNCS       (line: 174, col:   1):	Too many functions in file
+Error: DECL_ASSIGN_LINE     (line: 177, col:  30):	Declaration and assignation on a single line
+Error: LINE_TOO_LONG        (line: 184, col:  82):	line too long
+Error: TOO_MANY_FUNCS       (line: 201, col:   1):	Too many functions in file
+Error: TOO_MANY_FUNCS       (line: 221, col:   1):	Too many functions in file
+Error: TOO_MANY_FUNCS       (line: 230, col:   1):	Too many functions in file
+./othello/gnl_test_mandatory.c: Error!
+Error: EMPTY_LINE_FILE_START (line:   1, col:   1):	Empty line at start of file
+Error: INVALID_HEADER       (line:   1, col:   1):	Missing or invalid 42 header
+./othello/gnl_test_prototypes.h: Error!
+Error: EMPTY_LINE_FILE_START (line:   1, col:   1):	Empty line at start of file
+Error: INVALID_HEADER       (line:   1, col:   1):	Missing or invalid 42 header
+Error: TOO_MANY_ARGS        (line:  29, col:  75):	Function has more than 4 arguments
+Error: TOO_MANY_ARGS        (line:  31, col:  74):	Function has more than 4 arguments
+./othello/gnl_test_utils.c: Error!
+Error: EMPTY_LINE_FILE_START (line:   1, col:   1):	Empty line at start of file
+Error: INVALID_HEADER       (line:   1, col:   1):	Missing or invalid 42 header
+Error: TOO_MANY_LINES       (line:  45, col:   1):	Function has more than 25 lines
+Error: EMPTY_LINE_FUNCTION  (line:  60, col:   1):	Empty line in function
+Error: TOO_MANY_ARGS        (line:  78, col:  71):	Function has more than 4 arguments
+Error: TOO_MANY_ARGS        (line: 119, col:  74):	Function has more than 4 arguments
+Error: TOO_MANY_FUNCS       (line: 139, col:   1):	Too many functions in file
+Error: TOO_MANY_FUNCS       (line: 160, col:   1):	Too many functions in file
+Error: TOO_MANY_FUNCS       (line: 174, col:   1):	Too many functions in file
+Error: TOO_MANY_FUNCS       (line: 185, col:   1):	Too many functions in file
+Error: EMPTY_LINE_EOF       (line: 211, col:   1):	Empty line at end of file
+./othello/h_colors.h: Error!
+Error: INVALID_HEADER       (line:   1, col:   1):	Missing or invalid 42 header
+./othello/h_get_next_line_check.h: Error!
+Error: INVALID_HEADER       (line:   1, col:   1):	Missing or invalid 42 header
+[1;32m======================================[0;37m
